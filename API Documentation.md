@@ -7,6 +7,12 @@
     + [3.1 Request Schema](#31-request-schema)
     + [3.2 Response Schema](#32-response-schema)
 - [4. Additional Endpoint](#4-Additional-Endpoint)
+- [5. Conclusion](#5-Conclusion)
+- [6. Implementation](#6-Implementation)
+- [7. Testing](#7-Testing)
+- [8. Security](#8-Security)
+- [9. Documentation](#9-Documentation)
+- [10. Maintenance](#10-Maintenance)
 
 ## **1. Introduction**
 
