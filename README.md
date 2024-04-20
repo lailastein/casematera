@@ -29,15 +29,4 @@ You have been assigned the task of documenting an API that allows users to regis
 
 ```
 
-## Case documentation
-This OAS is use for registering an alias for a bank account. 
-
-defines a POST endpoint at `/account/alias` for registering an alias for a bank account. The request body schema includes nested objects for `accountAlias`, `account`, and `accountOwner`. The `aliasType` property in the `AccountAlias` object is an enum representing the three options available for the user to choose from: email, phone, or random.
-
-To enhance the API's capabilities, let's add an endpoint to retrieve account details using the alias:
-
-Essa especificação OpenAPI define um endpoint POST em /conta/alias para registrar um alias para uma conta bancária. O esquema do corpo da solicitação inclui objetos aninhados para accountAlias, account e accountOwner. A propriedade aliasType no objeto AliasConta é um enum representando as três opções disponíveis para o usuário escolher: email, telefone ou aleatório.
-
-Para aprimorar as capacidades da API, adicionamos um endpoint para recuperar os detalhes da conta usando o alias.
-
 Este projeto é um sistema de gerenciamento desenvolvido em Java com Spring Boot, utilizando a arquitetura MVC. Ele oferece funcionalidades para cadastrar, listar e gerenciar informações de Pessoas, Usuários e Contas. A integração com um banco de dados PostgreSQL proporciona persistência segura e eficiente.
