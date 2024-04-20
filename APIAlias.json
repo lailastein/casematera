@@ -1,97 +1,151 @@
-openapi: 3.0.0
-info:
-  title: Account Alias API
-  description: An API for registering aliases for bank accounts
-  version: 1.0.0
-servers:
-  - url: https://api.example.com/v1
-paths:
-  /account/alias:
-    post:
-      summary: Register an alias for a bank account
-      requestBody:
-        required: true
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/AccountAliasRequest'
-      responses:
-        '200':
-          description: Alias successfully registered
-        '400':
-          description: Bad request
-components:
-  schemas:
-    AccountAliasRequest:
-      type: object
-      properties:
-        accountAlias:
-          $ref: '#/components/schemas/AccountAlias'
-        account:
-          $ref: '#/components/schemas/Account'
-        accountOwner:
-          $ref: '#/components/schemas/AccountOwner'
-    AccountAlias:
-      type: object
-      properties:
-        alias:
-          type: string
-          description: The alias representing the bank account
-        aliasType:
-          type: string
-          enum: [email, phone, random]
-          description: The type of alias chosen by the user
-    Account:
-      type: object
-      properties:
-        id:
-          type: string
-          description: The unique identifier for the bank account
-        type:
-          type: string
-          description: The type of the bank account (e.g., checking, savings)
-        openingDate:
-          type: string
-          format: date
-          description: The date when the account was opened
-    AccountOwner:
-      type: object
-      properties:
-        id:
-          type: string
-          description: The unique identifier for the account owner
-        fullName:
-          type: string
-          description: The full name of the account owner
-        tradeName:
-          type: string
-          description: The trade name of the account owner's business
-
-  /account/details:
-    get:
-      summary: Retrieve account details by alias
-      parameters:
-        - in: query
-          name: alias
-          required: true
-          schema:
-            type: string
-            description: The alias representing the bank account
-      responses:
-        '200':
-          description: Account details retrieved successfully
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/AccountDetailsResponse'
-        '404':
-          description: Account not found
-components:
-  schemas:
-    AccountDetailsResponse:
-      type: object
-      properties:
-        account:
-          $ref: '#/components/schemas/Account'
-        accountOwner:
-          $ref: '#/components/schemas/AccountOwner'
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Account Alias API",
+    "description": "An API for registering aliases for bank accounts",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "[https://api.example.com/v1](https://api.example.com/v1)"
+    }
+  ],
+  "paths": {
+    "/account/alias": {
+      "post": {
+        "summary": "Register an alias for a bank account",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AccountAliasRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Alias successfully registered"
+          },
+          "400": {
+            "description": "Bad request"
+          }
+        }
+      }
+    },
+    "/account/details": {
+      "get": {
+        "summary": "Retrieve account details by alias",
+        "parameters": [
+          {
+            "in": "query",
+            "name": "alias",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "description": "The alias representing the bank account"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Account details retrieved successfully",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AccountDetailsResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Account not found"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "AccountAliasRequest": {
+        "type": "object",
+        "properties": {
+          "accountAlias": {
+            "$ref": "#/components/schemas/AccountAlias"
+          },
+          "account": {
+            "$ref": "#/components/schemas/Account"
+          },
+          "accountOwner": {
+            "$ref": "#/components/schemas/AccountOwner"
+          }
+        }
+      },
+      "AccountAlias": {
+        "type": "object",
+        "properties": {
+          "alias": {
+            "type": "string",
+            "description": "The alias representing the bank account"
+          },
+          "aliasType": {
+            "type": "string",
+            "enum": [
+              "email",
+              "phone",
+              "random"
+            ],
+            "description": "The type of alias chosen by the user"
+          }
+        }
+      },
+      "Account": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "The unique identifier for the bank account"
+          },
+          "type": {
+            "type": "string",
+            "description": "The type of the bank account (e.g., checking, savings)"
+          },
+          "openingDate": {
+            "type": "string",
+            "format": "date",
+            "description": "The date when the account was opened"
+          }
+        }
+      },
+      "AccountOwner": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "The unique identifier for the account owner"
+          },
+          "fullName": {
+            "type": "string",
+            "description": "The full name of the account owner"
+          },
+          "tradeName": {
+            "type": "string",
+            "description": "The trade name of the account owner's business"
+          }
+        }
+      },
+      "AccountDetailsResponse": {
+        "type": "object",
+        "properties": {
+          "account": {
+            "$ref": "#/components/schemas/Account"
+          },
+          "accountOwner": {
+            "$ref": "#/components/schemas/AccountOwner"
+          }
+        }
+      }
+    }
+  }
+}
