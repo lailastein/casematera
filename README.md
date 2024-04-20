@@ -28,5 +28,3 @@ You have been assigned the task of documenting an API that allows users to regis
 
 
 ```
-
-Este projeto é um sistema de gerenciamento desenvolvido em Java com Spring Boot, utilizando a arquitetura MVC. Ele oferece funcionalidades para cadastrar, listar e gerenciar informações de Pessoas, Usuários e Contas. A integração com um banco de dados PostgreSQL proporciona persistência segura e eficiente.
