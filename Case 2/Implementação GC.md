@@ -32,7 +32,7 @@ Realizar entrevistas com colaboradores e clientes para identificar os principais
 
 A partir dos dados coletados das entrevistas, será estabelecido os objetivos estratégicos na realização da GC, sempre alinhados com os objetivos da empresa. Com os objetivos claros, será definida qual a melhor ferramenta/tecnologia será utilizada para alcançar os objetivos.
 
-Realizar a divulgação dos resultados obtidos com as entrevistas e a estratégia criada à partir deles para ter o engajamento dos colaboradores, resultando em uma maior adesão à metodologia adotada.
+Realizar a divulgação dos resultados obtidos com as entrevistas e a estratégia criada a partir deles para ter o engajamento dos colaboradores, resultando em uma maior adesão à metodologia adotada.
 
 ### Passo 3 - Repositório de Conhecimento
 
