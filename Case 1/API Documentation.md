@@ -5,16 +5,13 @@
 - [2.  API Information](#2-API-Information)
 - [3. Server](#3.-Server)
 - [4. Overview](#4-Overview)
-- [5. Request/Response Schemas](#3-request/Response-Schemas)
-    + [5.1 Request Schema](#31-request-schema)
-    + [5.2 Response Schema](#32-response-schema)
-- [6. Additional Endpoint](#4-Additional-Endpoint)
-- [7. Conclusion](#5-Conclusion)
-- [8. Implementation](#6-Implementation)
-- [9. Testing](#7-Testing)
-- [10. Security](#8-Security)
-- [11. Maintenance](#9-Maintenance)
-- [12. Documentation](#10-Documentation)
+- [5. Request/Response Schemas](#5-request/Response-Schemas)
+    + [5.1 Request Schema](#51-request-schema)
+    + [5.2 Response Schema](#52-response-schema)
+- [6. Additional Endpoint](#6-Additional-Endpoint)
+- [7. Conclusion](#7-Conclusion)
+- [8. Maintenance](#8-Maintenance)
+- [9. Documentation](#9-Documentation)
 
 
 ## **1. Introduction**
@@ -84,11 +81,6 @@ The API provides two endpoints:
 
 ### 5.2 Response Schema for endpoint `POST /account/alias`
 
-**Response Codes**
-
-200: The alias was successfully registered.
-400: Bad request. This could be due to invalid data in the request body or missing required fields.
-
 ```json
 {
   "description": "Alias successfully registered"
@@ -99,6 +91,13 @@ The API provides two endpoints:
 
 * `aliasId`: The ID of the newly created account alias.
 * `message`: A confirmation message.
+
+**Response Codes**
+
+200: The alias was successfully registered.
+
+400: Bad request. This could be due to invalid data in the request body or missing required fields.
+
 
 ## **6. Additional Endpoint**
 
@@ -112,42 +111,12 @@ This endpoint would be used to retrieve information about a specific account ali
 
 This OpenAPI Specification defines a simple and easy-to-use API for registering account aliases. The API is consistent with other APIs and is easy for developers to understand and use. The additional endpoint that was suggested would further enhance the API's capabilities and make it more valuable to users.
 
-## **8. Implementation**
-
-The API can be implemented using a variety of programming languages and frameworks. Some popular options include:
-
-* Java with Spring Boot
-* Python with Flask
-* JavaScript with Node.js
-
-The API can be deployed to a variety of cloud platforms, such as Amazon Web Services (AWS), Google Cloud Platform (GCP), and Microsoft Azure.
-
-## **9. Testing**
-
-The API can be tested using a variety of tools and techniques, such as:
-
-* Unit tests
-* Integration tests
-* End-to-end tests
-
-The API can also be tested using a variety of test automation tools, such as Selenium and Cypress.
-
-## **10. Security**
-
-The API should be secured using a variety of security measures, such as:
-
-* Authentication
-* Authorization
-* Encryption
-
-The API should also be monitored for security threats and vulnerabilities.
-
-## **11. Maintenance**
+## **8. Maintenance**
 
 The API should be maintained regularly to ensure that it is up-to-date and secure.
 
 The API should also be monitored for performance and scalability.
 
-## **12. Documentation**
+## **9. Documentation**
 
 Documentation was also done through [Swagger UI](https://app.swaggerhub.com/apis-docs/LAILAPINHEIROO/Casemateraa/1.0).
