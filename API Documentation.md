@@ -11,8 +11,9 @@
 - [6. Implementation](#6-Implementation)
 - [7. Testing](#7-Testing)
 - [8. Security](#8-Security)
-- [9. Documentation](#9-Documentation)
-- [10. Maintenance](#10-Maintenance)
+- [9. Maintenance](#9-Maintenance)
+- [10. Documentation](#10-Documentation)
+
 
 ## **1. Introduction**
 
