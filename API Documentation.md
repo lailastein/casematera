@@ -121,14 +121,12 @@ The API should be secured using a variety of security measures, such as:
 
 The API should also be monitored for security threats and vulnerabilities.
 
-## **9. Documentation**
-
-The API should be documented using a variety of documentation tools, such as [Swagger](https://app.swaggerhub.com/apis-docs/LAILAPINHEIROO/Casemateraa/1.0) and OpenAPI Generator.
-
-The documentation should be clear, concise, and easy to understand.
-
-## **10. Maintenance**
+## **9. Maintenance**
 
 The API should be maintained regularly to ensure that it is up-to-date and secure.
 
 The API should also be monitored for performance and scalability.
+
+##**10. Documentation**
+
+Documentation was also done through [Swagger UI](https://app.swaggerhub.com/apis-docs/LAILAPINHEIROO/Casemateraa/1.0).
