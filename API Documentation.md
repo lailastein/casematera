@@ -123,7 +123,7 @@ The API should also be monitored for security threats and vulnerabilities.
 
 ## **9. Documentation**
 
-The API should be documented using a variety of documentation tools, such as Swagger and OpenAPI Generator.
+The API should be documented using a variety of documentation tools, such as [Swagger](https://app.swaggerhub.com/apis-docs/LAILAPINHEIROO/Casemateraa/1.0) and OpenAPI Generator.
 
 The documentation should be clear, concise, and easy to understand.
 
