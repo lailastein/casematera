@@ -11,7 +11,7 @@
 - [6. Additional Endpoint](#6.-additional-endpoint)
 - [7. Conclusion](#7.-conclusion)
 - [8. Maintenance](#8.-maintenance)
-- [9. Documentation](#9.-documentation)
+- [9. Documentation](#9-documentation)
 
 
 ## **1. Introduction**
