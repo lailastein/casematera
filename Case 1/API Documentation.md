@@ -1,10 +1,10 @@
 # OpenAPI Specification for Account Alias API
 
 ## Table of contents
-- [1. Introduction](#1-introduction)
-- [2.  API Information](#2-API-Information)
-- [3. Server](#3.-Server)
-- [4. Overview](#4.-Overview)
+- [1. Introduction](#1.-introduction)
+- [2.  API Information](#2-api-information)
+- [3. Server](#3.-server)
+- [4. Overview](#4.-overview)
 - [5. Request/Response Schemas](#5.-request/response-schemas)
     + [5.1 Request Schema](#5.1-request-schema)
     + [5.2 Response Schema](#5.2-response-schema)
