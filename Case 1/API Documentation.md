@@ -4,14 +4,14 @@
 - [1. Introduction](#1-introduction)
 - [2.  API Information](#2-API-Information)
 - [3. Server](#3.-Server)
-- [4. Overview](#4-Overview)
-- [5. Request/Response Schemas](#5-request/response-schemas)
-    + [5.1 Request Schema](#51-request-schema)
-    + [5.2 Response Schema](#52-response-schema)
-- [6. Additional Endpoint](#6-additional-endpoint)
-- [7. Conclusion](#7-conclusion)
-- [8. Maintenance](#8-maintenance)
-- [9. Documentation](#9-documentation)
+- [4. Overview](#4.-Overview)
+- [5. Request/Response Schemas](#5.-request/response-schemas)
+    + [5.1 Request Schema](#5.1-request-schema)
+    + [5.2 Response Schema](#5.2-response-schema)
+- [6. Additional Endpoint](#6.-additional-endpoint)
+- [7. Conclusion](#7.-conclusion)
+- [8. Maintenance](#8.-maintenance)
+- [9. Documentation](#9.-documentation)
 
 
 ## **1. Introduction**
